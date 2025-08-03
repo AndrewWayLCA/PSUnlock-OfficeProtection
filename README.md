@@ -1,6 +1,8 @@
 # PSUnlock-OfficeProtection
 Commands to remove basic worksheet and workbook modify passwords (DOES NOT UNLOCK OPEN PASSWORDS)
 
+See the most up-to-date help, status and documentation at the [GitHub Repository](https://github.com/AndrewWayLCA/PSUnlock-OfficeProtection).
+
 # CmdLets
 ## Unlock-ExcelPasswordProtection
 ### Synopsis
@@ -32,3 +34,6 @@ Notes for coming, planned, possible improvements to the module will be listed he
 These may or may not be implemented.
 
 Find [the file](CBB.md) here.
+
+# How it works
+Have a read of [How it works](How-It-Works.md) to see what this code gets up to. It's pretty easy to remove protection from any modern Office document by extracting the file to it's component `.xml` parts, modifying those parts and then reconstructing the file.
