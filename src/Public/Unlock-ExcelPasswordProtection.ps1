@@ -1,4 +1,3 @@
-
 <#
 .SYNOPSIS
 Removes password protection from Excel files (.xlsx, .xlsm) for workbook and/or worksheet.
@@ -25,6 +24,10 @@ Removes all password protection from the specified Excel file and creates a back
 .EXAMPLE
 Unlock-ExcelPasswordProtection -Path 'C:\Files\Protected.xlsx' -Remove Workbook -NoBackup
 Removes only workbook protection and skips backup creation.
+
+.EXAMPLE
+Unlock-ExcelPasswordProtection -Path 'C:\Files\Protected.xlsx' -OutFile 'C:\Files\Unlocked.xlsx' -Remove Worksheet
+Removes worksheet protection and saves the unlocked file to a new location without modifying the original.
 
 .NOTES
 Requires PowerShell 5.1 or later. Uses Expand-Archive and Compress-Archive cmdlets.
