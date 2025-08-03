@@ -3,6 +3,12 @@ Commands to remove basic worksheet and workbook modify passwords (DOES NOT UNLOC
 
 See the most up-to-date help, status and documentation at the [GitHub Repository](https://github.com/AndrewWayLCA/PSUnlock-OfficeProtection).
 
+## Installation
+This module is available from the [PowerShell Gallery](https://www.powershellgallery.com/packages/PSUnlock-OfficeProtection).
+```powershell
+Install-Module -Name PSUnlock-OfficeProtection
+```
+
 # CmdLets
 ## Unlock-ExcelPasswordProtection
 ### Synopsis
