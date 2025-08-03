@@ -8,6 +8,13 @@ So, these prompts:
 ![Excel Modify Password Prompt](Images/ExcelModifyPasswordPrompt.png)
 ![Excel Worksheet Protect Prompt](Images/ExcelWorksheetProtectPrompt.png)
 
+## Usage
+To remove modify passwords or sheet passwords:
+```powershell
+Unlock-ExcelProtectionPassword -Path .\MyProtectedFile.xlsx
+```
+By default this will make a backup of your file with a `.bak` extension before extracting the file as a zip to a temp folder, removing the `xml` elements that include protection and then reconstitute the file to it's original filename.
+
 ## Installation
 This module is available from the [PowerShell Gallery](https://www.powershellgallery.com/packages/PSUnlock-OfficeProtection).
 ```powershell
